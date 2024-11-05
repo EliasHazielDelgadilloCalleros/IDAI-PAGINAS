@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JavaScript</title>
+    <style>
+
+    </style>
+    <script src="js/index.js">
+
+    </script>      
+    
+</head>
+<body>
+</body>
+<script>
+    // alert("Mensaje final");
+    // alert("Me gusta mi materia de algebra");
+
+
+    var matricula = 45429;
+    var nombre = "Haziel Calleros"
+
+    alert(matricula);
+    alert("Mi nombre es:" + nombre + "Mi matricula es:" + matricula);
+
+    // VARIABLES DE TIPO NUMERICO
+    var edad = 17;
+    var precio = 150.15;
+
+    // OPERACIONES
+    var suma = 5+3;
+    var multiplicacion = 8 * 4
+
+    console.info(edad);
+
+    var apellido = "Calleros";
+    var estadocivil = "Soltero";
+
+    console.warn(suma);
+    console.log(nombre+apellido+estadocivil)
+
+    // ARREGLOS (ARRAYS)
+    var amigos = ["Guillermo","Gustavo","Ricardo"];
+    var edades = [18,21,20,19,21];
+    console.log(amigos);
+    console.log(amigos[2]);
+    
+    // var respuesta = true;
+    // var opciones= false;
+
+
+    // Saber la longitus de mi arreglo
+    amigos.length;
+    console.log(amigos.length);
+
+    // Agregar nuevos elementos a mi arreglo
+    amigos.push("Eloisa")
+    amigos.push("Brandon")
+    console.log(amigos.length);
+
+    // Quitar el ultimo elemnto de mi arreglo
+    amigos.pop();
+    amigos.pop();
+
+    // Juntar dos arreglos (concatenar);
+    var familia = ["Betty","Jesed"];
+    var todos = familia.concat(amigos);
+    console.log(todos);
+
+    var amigosOrdenados = amigos.sort();
+    document.write(amigosOrdenados);
+
+    
+</script>
+</html>
