@@ -1,118 +1,242 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller Mecánico</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Ejemplo Proyecto</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css">
+
+    <link rel="shortcut icon" href="../img/logo.png">
+
 </head>
+
 <body>
+
     <!-- MENU PRINCIPAL -->
     <div class="menu-principal">
         <div class="logo" id="logo">
-            <img src="img/logo.png" alt="Logo">
+            <img src="../img/Logo De La Vega Car Service.png" alt="Logo">
         </div>
+
         <div class="menu-bar" id="menuBar">
+
             <i class="fas fa-angle-right" id="btnMenuClose"></i>
+
             <nav class="enlaces" id="enlaces">
                 <ul>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Equipo</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
+
             <div class="sociales">
-                <a href="#"><span class="fab fa-facebook"></span></a>
-                <a href="#"><span class="fab fa-instagram"></span></a>
-                <a href="#"><span class="fab fa-twitter"></span></a>
-                <a href="#"><span class="fab fa-youtube"></span></a>
+                <a href="https://www.facebook.com/share/15VHJBzWpB/?mibextid=kFxxJD" target="_blank" style="text-decoration: none; color: #1877f2;">
+                <span class="fab fa-facebook"></span></a>
+
+                <a href="https://www.instagram.com/delavegacarservice?igsh=ODVwaWhtYWlhemtx" target="_blank" style="text-decoration: none; color: #f218a9;">
+                <span class="fab fa-instagram"></span></a>
+
+                <a href="https://x.com/i/flow/login?lang=es" target="_blank" style="text-decoration: none; color: #000000;">
+                    <span class="fa-brands fa-x-twitter"></span></a>
+
+                    <a href="https://www.youtube.com/" target="_blank" style="text-decoration: none; color: #ff0000;">
+                        <span class="fab fa-youtube"></span></a>
             </div>
         </div>
+
         <i class="fas fa-bars" id="btnMenuOpen"></i>
-    </div>
+
+    </div> <!-- FIN DE MENU PRINCIPAL -->
+
 
     <!-- SLIDER DE PRODUCTOS -->
     <section id="menu-productos">
         <div class="contenedor-principal">
             <button id="btn-izquierda"><span class="fas fa-angle-left"></span></button>
+
             <div class="slider">
-                <!-- Producto 1 -->
                 <div class="container-productos">
                     <div class="descripcion-productos">
-                        <h2>Producto <b>premium</b></h2>
-                        <h1>Cambio de Aceite</h1>
-                        <p>Servicio de cambio de aceite con productos de alta calidad.</p>
-                        <button class="btn">¡Solicítalo aquí!<span class="fas fa-angle-right"></span></button>
+                        <h1>¡los mejores servicios!</h1>
+                        <p>De La Vega Car Service</p>
+
+                        <button class="btn"> ¡Solicitalo aquí! <span class="fas fa-angle-right"></span></button>
                     </div>
+
                     <div class="imagen-productos">
-                        <img src="img/cambio-aceite.png" alt="">
+                        <img src="../img/Cupra y Mercedes.jpeg" style="width: 400px; height: 300px; " alt="">
                     </div>
+
+
+
                 </div>
 
-                <!-- Agregar más productos aquí -->
+                <div class="container-productos">
+                    <div class="descripcion-productos">
+                        <h1>Ubicación</h1>
+                        <p><i class="fa-solid fa-location-dot"></i>
+                             DIRECCIÓN AV ALMAZÁN 612
+                            <br>
+                            </p>
+                    </div>
+
+                    <div class="imagen-productos">
+                        <img src="../img/Ubicación del taller.jpeg" style="width: 400px; height: 300px; " alt="">
+                    </div>
+
+
+                </div>
+
+                <div class="container-productos">
+                    <div class="descripcion-productos">
+                        <h1>Corvette 1967</h1>
+                        <p>A este corvette 67 se le hicieron algunos trabajos los cuales son: Cambio de línea de frenos, balatas generales, alineación y balanceo.</p>
+                    </div>
+
+                    <div class="imagen-productos">
+                        <img src="../img/Corvette 1967.jpeg" style="width: 300px; height: 300px; " alt="">
+                    </div>
+
+
+
+
+                </div>
+
             </div>
+
+            
+
             <button id="btn-derecha"><span class="fas fa-angle-right"></span></button>
+        </div>
+    </section> <!-- FIN DE SLIDER DE PRODUCTOS -->
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+
+        <div class="servicios-titulos">
+            <h2 class="subtitulos">De La Vega Car Service</h2>
+            <h1 class="titulos">Bienvenidos a De La Vega Car Service</h1>
+        </div>
+
+        <div class="servicios-container">
+            <div class="imagen-central">
+                <img src="../img/Limited 2020.jpeg" style="width: 400px; height: 400px; " alt="">
+            </div>
+
+            <div class="items calidad">
+                <p><span class="fa-solid fa-car"></span></p>
+                <p class="titulo-item">Frenos</p>
+                <p class="texto-item">Linea de frenos y cambio de balatas</p>
+            </div>
+            <div class="items ingredientes">
+                <p><span class="fa-solid fa-gears"></span></p>
+                <p class="titulo-item">Afinaciones</p>
+                <p class="texto-item">Afinaciones mayores o menores</p>
+            </div>
+            <div class="items rapidez">
+                <p><span class="fa-solid fa-wrench"></span></p>
+                <p class="titulo-item">Reparación de motor</p>
+                <p class="texto-item">Reparación de cualquier tipo de daño del motor</p>
+            </div>
+            <div class="items entrega">
+                <p><span class="fa-solid fa-fill-drip"></span></p>
+                <p class="titulo-item">Enderezado y Pintura</p>
+                <p class="texto-item">Pintamos cualquier carro del color que se requiera</p>
+            </div>
         </div>
     </section>
 
-    <!-- SECCION CALCULADORA DE SERVICIOS -->
-    <main>
-        <section class="calculator">
-            <h2>Calculadora de Servicios Mecánicos</h2>
-            <form id="calculoServicios">
-                <label for="">Selecciona un servicio:</label>
-                <select id="servicio" required>
-                    <option value="" disabled selected>-- Selecciona un servicio --</option>
-                    <option value="30">Cambio de Aceite - $30</option>
-                    <option value="150">Cambio de Frenos - $150</option>
-                    <option value="75">Alineación - $75</option>
-                    <option value="120">Cambio de Batería - $120</option>
-                </select>
+    <!-- SECCION PERSONAL -->
+    <section id="equipo">
+        <!-- PASO 01. la clase Persona y crear el primer perfil -->
+         <!-- PASO 02. copiar tres veces mas la división de clase persona para los demas perfiles -->
+        <div class="persona">
+            <img src="../img/Cesar Martinez.jpeg" alt="" class="persona-imagen">
+            <div class="persona-info">
+                 <h2>Cesar Martinez</h2>
+                 <p>Mecanico</p>
+                <div class="social-media">
+                    <a href=""> <span class="fab fa-facebook"></span></a>
+                    <a href=""> <span class="fab fa-instagram"></span></a>
+                    <a href=""> <span class="fab fa-twitter"></span></a>
+                    <a href=""> <span class="fab fa-linkedin-in"></span></a> 
+                </div>
+            </div>
+        </div>
 
-                <label for="">Cantidad:</label>
-                <input type="number" id="cantidad" value="1" min="1">
+        
+        <div class="persona">
+            <img src="../img/Guillermo De La Vega.jpeg" alt="" class="persona-imagen">
+            <div class="persona-info">
+                 <h2>Guillermo De La Vega</h2>
+                 <p>Jefe De Mecanicos</p>
+                 <div class="social-media">
+                      <a href=""><span class="fab fa-facebook"></span></a>
+                      <a href=""><span class="fab fa-instagram"></span></a>
+                      <a href=""><span class="fab fa-twitter"></span></a>
+                      <a href=""><span class="fab fa-linkedin-in"></span></a>
+                 </div>
 
-                <button type="button" onclick="calcular()">Calcular Precio</button>
+            </div>
+       </div>
 
-                <div class="result">
-                    Total: $<input type="text" id="resultado" readonly>
-                </div>	
-            </form>
-        </section>
+       <div class="persona">
+        <img src="../img/Erick Barrios.jpeg" alt="" class="persona-imagen">
+        <div class="persona-info">
+            <h2>Erick Barrios</h2>
+            <p>Mecanico</p>
+                 <div class="social-media">
+                      <a href=""><span class="fab fa-facebook"></span></a>
+                      <a href=""><span class="fab fa-instagram"></span></a>
+                      <a href=""><span class="fab fa-twitter"></span></a>
+                      <a href=""><span class="fab fa-linkedin-in"></span></a>
+                 </div>
 
-        <!-- SECCION SERVICIOS -->
-        <section id="servicios">
-            <!-- Contenido de servicios -->
-            <h1>Servicios Ofrecidos</h1>
-            <!-- Aquí puedes agregar más detalles sobre los servicios -->
-        </section>
+            </div>
+       </div>
 
-        <!-- SECCION EQUIPO -->
-        <section id="equipo">
-            <!-- Información del equipo -->
-            <!-- Aquí puedes agregar detalles sobre el equipo del taller -->
-        </section>
+    </section>
 
-        <!-- SECCION CONTACTO -->
-        <section id="contacto">
-            <h1>Contáctanos</h1>
-            <form action="" id="formulario">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
-                <input type="email" id="email" name="email" placeholder="Email" required />
-                <textarea name="comentarios" id="comentarios" placeholder="Ingrese su mensaje"></textarea>
-                <input type="submit" value="Enviar"/>
-            </form> 
-        </section>
 
-    </main>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <div class="titulo-contacto">
+             <h2 class="subtitulos">Que servicios necesitas?</h2>
+             <h1 class="titulos">Contáctanos</h1>
+        </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2024 De La Vega Car Service. Todos los derechos reservados.</p>
-    </footer>
+        <form action="" id="formulario">
+             <div class="two-fiels">
+                  <div class="inputConIcon">
+                       <input type="text" id="nombre" name="nombre" class="input-text" placeholder="Nombre">
+                       <i class="fas fa-user"></i>
+                  </div>
 
-    <!-- Scripts -->
-    <script src="./script.js"></script>
+                  <div class="inputConIcon">
+                       <input type="email" id="email" name="email" class="input-email" placeholder="Telefono">
+                       <i class="fa-solid fa-phone"></i>
+                  </div>
+             </div>
+
+
+             <div class="fiels">
+                  <div class="inputConIcon textareaIcon">
+                       <textarea name="comentarios" id="comentarios" class="textarea" placeholder="Ingrese su mensaje"></textarea>
+                       <i class="fas fa-comments"></i>
+                  </div>
+             </div>
+
+             <div class="fiels-btn">
+                  <input type="submit" class="btn btn-input" value="Enviar">
+             </div>
+        </form>
+   </section>
+
+    <script src="../js/app.js"></script>
 </body>
+
 </html>

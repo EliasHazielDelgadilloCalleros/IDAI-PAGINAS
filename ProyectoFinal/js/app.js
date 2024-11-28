@@ -10,14 +10,50 @@ btnMenuClose.addEventListener("click", function () {
     menuResponsive.classList.remove("active");
 });
 
-function calcular() {
-    var servicioSelect = document.getElementById("servicio");
-    var cantidadInput = document.getElementById("cantidad");
-    
-    var precioServicio = parseInt(servicioSelect.value);
-    var cantidad = parseInt(cantidadInput.value);
-    
-    var total = precioServicio * cantidad;
+var enlaces = document.getElementById("enlaces");
 
-    document.getElementById("resultado").value = total || 0; // Muestra el total
+enlaces.addEventListener("click", function () {
+    menuResponsive.style.transformStyle = "0.5s"
+    menuResponsive.classList.remove("active");
+});
+
+// SLIDER DE PRODUCTOS
+var contenedor = document.querySelector('.slider'),
+    btnIzquierdo = document.getElementById("btn-izquierda"),
+    btnDerecho = document.getElementById("btn-derecha");
+
+// EVENTO PARA EL BOTON DERECHO
+btnDerecho.addEventListener("click", function () {
+    contenedor.scrollLeft += contenedor.offsetWidth;
+});
+
+// EVENTO PARA EL BOTON IZQUIERDO
+btnIzquierdo.addEventListener("click", function () {
+    contenedor.scrollLeft -= contenedor.offsetWidth;
+});
+
+var formulario = document.getElementById("formulario");
+
+function validar(e) {
+    var inputNombre = document.getElementById("nombre");
+    var inputEmail = document.getElementById("email");
+    var inputComments = document.getElementById("comentarios");
+
+    if (inputNombre.value == 0 
+        || inputEmail.value == 0 /* || es cond. O */
+        || inputComments.value == 0 ) {
+        e.preventDefault();
+        alert("Te faltan todos los campos");
+    }
+    else
+    {
+        e.preventDefault();
+        alert("Datos enviados");
+
+        inputNombre.value = "";
+        inputEmail.value = "";
+        inputComments.value = "";
+    }
 }
+
+formulario.addEventListener("submit", validar);
