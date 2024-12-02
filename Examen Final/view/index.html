@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de HTML, CSS y JavaScript</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz de HTML, CSS y JavaScript</h1>
+        <form id="quiz-form">
+            <div class="question" id="q1">
+                <p>¿Cuál etiqueta se usa para un enlace en HTML?</p>
+                <label><input type="radio" name="q1" value="a"> < a > </label>
+                <label><input type="radio" name="q1" value="b"> < link > </label>
+                <label><input type="radio" name="q1" value="c"> < p ></label>
+            </div>
+
+            <div class="question" id="q2">
+                <p>¿Que propiedad CSS se usa para cambiar el color de fondo?</p>
+                <label><input type="radio" name="q2" value="a"> color </label>
+                <label><input type="radio" name="q2" value="b"> background-color </label>
+                <label><input type="radio" name="q2" value="c"> border-color </label>
+            </div>
+
+            <div class="question" id="q3">
+                <p>¿Que función en JavaScript muestra un mensaje en la consola?</p>
+                <label><input type="radio" name="q3" value="a"> alert() </label>
+                <label><input type="radio" name="q3" value="b"> console.log() </label>
+                <label><input type="radio" name="q3" value="c"> prompt() </label>
+            </div>
+
+            <button type="submit">Enviar Respuestas</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
